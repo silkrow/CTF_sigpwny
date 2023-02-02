@@ -9,12 +9,16 @@ def vigenereDecrypt(ciphertext, key):
   plaintext = ""
   for i in range(len(ciphertext)):
     #Fix the below
-    plaintext += ciphertext[i]
+    plaintext += chr((ord(ciphertext[i]) - ord(key[i % len(key)])) % 26 + ord("a"))
   return plaintext
 
 with open("ciphertext", "r") as c, open("key", "r") as k:
   ciphertext = c.read()
   key = k.read()
+
+  # Cut out the ending byte which is not in the valid alphabet.
+  ciphertext = ciphertext[:-1]
+  key = key[:-1]
 
   #TODO: figure out how to decode the ciphertext
   #hint: what are those function names?
