@@ -1,0 +1,2 @@
+import sys
+sys.stdout.buffer.write(b"1234567890123456789012345678901234567890"+b"\x5b\x12\x40\x00\x00")
