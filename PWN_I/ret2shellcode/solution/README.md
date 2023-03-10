@@ -1,4 +1,13 @@
 1. Type the following command will give the flag.
 ```python3 send.py```
-2. To actually solve this problem, you should first use the following command to enable execution permission for challenge.
+2. To actually learn how I came up with the solution, please read the following instructions.
+3. You should first use the following command to enable execution permission for challenge.
 ```chmod +x challenge```
+4. If you run the challenge program locally multiple times, you'll notice that address of "name" array keeps changing. With that in mind, my python code starts with establishing connection with server, read the welcome message, and an extra step to parse it and find out the address of name array.
+5. Luckily, although address of "name" changes in each run of challenge, if you open challenge within gdb, the address will be fixed each time. Thus I started with writing a python code to attack locally. 
+6. Overflowing "name" array is easy, a simple b"A"*40 should do the job (32 for array chars and 8 for old rbp). Than the payload should contain the address of shellcode, followed by the shellcode. 
+7. In the local case, just open challenge in gdb and find out address_name (I name it this way for confinence), your overwriting of return address should then be address_name + 48. The offset 48 comes from the 40 overflow "A" chars and the 8 bytes of return address. In fact I wasn't that sure about this 48 offset, but gdb helped me to confirm this.
+8. Shellcode is the tricky part. I actually got a pretty shellcode string in hand from some course work, so I simply applied that. However, using gdb, I found that there's segmentation fault at the end of my shellcode during my attack. So I opened up "last year's slide" mentioned in the problem description and found a link to another shellcode string. Once again, my attack failed with a segmentation fault at the end of that shellcode.
+9. One thing was for sure: the return address has been overwritten correctly and led to my shellcode. (However it actually took me a long time to figure this out since I kept trusting the shellcode string and doubting the offset of address_name)
+10. Finally I realized that the segmentation fault comes right after "int $0x80", which means system call didn't work, after briefly searching online, I realized that x86_64 Linux doesn't use "int $0x80" for system call, so the two shellcode strings I used before were all for 32 bit systems instead of 64 bit. So I searched online for a shellcode string targetting 64 bit system, and got the shell running.
+11. Lastly, apply the things I have in my python code for server, and add another message ("cat flag.txt") after sending the payload. (Again, I didn't realize this until openning up challenge.c and read the instructions in it carefully)
