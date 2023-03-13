@@ -1,6 +1,7 @@
 1. Give execution permission to ```encryption``` with following command.
 
 ```chmod +x encryption```
+
 2. Create a new project in Ghidra and analyze ```encryption``` by default settings.
 3. The first while loop in ```main``` is to find the "length" of the hardcoded flag, however I didn't find this to be useful in later codes.
 4. The for loop that writes some memory with itself is clearly useless.
