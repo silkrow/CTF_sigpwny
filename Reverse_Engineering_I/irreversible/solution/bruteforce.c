@@ -27,16 +27,11 @@ int main() {
 	unsigned long l;
 	unsigned long input;
 	
-	//input = 1;
-	//l = secret_function(0x400000019, input, 0xffffffad5);
-	//printf ("%ld\n", 0xffffffad5);
-	//printf ("%ld\n", l);
-	//printf ("%ld\n", 0x73a63a673);
-
-	for (int i = 0; i < 1000000000; i++){
+	for (unsigned long i = 0; i < 0xffffffad5; i++){
 		unsigned long q = secret_function(0x400000019, i, 0xffffffad5);
 		if (q == 0x73a63a673){
-			printf("%d\n", i);
+			printf("%ld\n", i);
+			return 0;
 		}
 	}
 
