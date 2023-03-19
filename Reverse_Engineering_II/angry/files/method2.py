@@ -28,9 +28,9 @@ for i in range(31):
 
 	ent_state = proj.factory.entry_state(args=['angry', arg1])	
 
-	for b in arg1.chop(8):
-		ent_state.add_constraints(b >= ord('!'))
-		ent_state.add_constraints(b <= ord('~'))
+#	for b in arg1.chop(8):
+#		ent_state.add_constraints(b >= ord('!'))
+#		ent_state.add_constraints(b <= ord('~'))
 	
 	if (i > 0):
 		for j in range(len(known)):
