@@ -42,11 +42,14 @@ def find_condition(state):
 		return False
 
 for i in range(31):
+	iter_num = i
 	print(i)
 	print(sm.active[0].solver.eval(arg1, cast_to=bytes))
 	print(sm.active[0].regs.eax)
-	iter_num = i
 	sm.explore(find=find_condition, avoid=fail).move(from_stash='found', to_stash='active')
+	temp_s = sm.active[0].solver.eval(arg1.get_byte(i), cast_to = bytes)
+	print(temp_s)
+	sm.active[0].add_constraints(arg1.get_byte(i) == temp_s)
 
 s = sm.active[0]
 print("Done!")
