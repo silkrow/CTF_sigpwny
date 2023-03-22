@@ -20,7 +20,7 @@ for i in range(flag_len):
 			continue
 
 		# load the executable
-		gdb.execute("file angry", False, True)
+		gdb.execute("file ../files/angry", False, True)
 
 		# set argument
 		input = known_flag+chr(ord('!')+j)+(unknown_len-1)*"0"
