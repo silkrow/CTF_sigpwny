@@ -1,0 +1,319 @@
+                             **************************************************************
+                             *                          FUNCTION                          *
+                             **************************************************************
+                             undefined z(undefined param_1, undefined param_2, undefi
+             undefined         AL:1           <RETURN>
+             undefined         DIL:1          param_1
+             undefined         SIL:1          param_2
+             undefined         DL:1           param_3
+             undefined         CL:1           param_4
+             undefined         R8B:1          param_5
+             undefined         R9B:1          param_6
+             undefined4        Stack[0x8]:4   param_7                                 XREF[30621]: 001011c9(R), 
+                                                                                                   001011dd(RW), 
+                                                                                                   00101200(R), 
+                                                                                                   00101214(R), 
+                                                                                                   0010122d(RW), 
+                                                                                                   00101250(R), 
+                                                                                                   00101264(R), 
+                                                                                                   00101278(RW), 
+                                                                                                   0010129b(R), 
+                                                                                                   001012af(R), 
+                                                                                                   001012c8(RW), 
+                                                                                                   001012eb(R), 
+                                                                                                   001012ff(R), 
+                                                                                                   00101318(RW), 
+                                                                                                   0010133b(R), 
+                                                                                                   0010134f(R), 
+                                                                                                   00101368(RW), 
+                                                                                                   0010138b(R), 
+                                                                                                   0010139f(R), 
+                                                                                                   001013b8(RW)  
+             undefined4        Stack[0x10]:4  param_8                                 XREF[10550]: 001011fc(R), 
+                                                                                                   0010124c(R), 
+                                                                                                   00101297(R), 
+                                                                                                   001012e7(R), 
+                                                                                                   00101337(R), 
+                                                                                                   00101387(R), 
+                                                                                                   001013d7(R), 
+                                                                                                   00101427(R), 
+                                                                                                   00101477(R), 
+                                                                                                   001014c7(R), 
+                                                                                                   00101514(R), 
+                                                                                                   00101564(R), 
+                                                                                                   001015b4(R), 
+                                                                                                   00101604(R), 
+                                                                                                   00101654(R), 
+                                                                                                   001016a4(R), 
+                                                                                                   001016f1(R), 
+                                                                                                   00101741(R), 
+                                                                                                   0010178e(R), 
+                                                                                                   001017db(R)  
+             undefined8        Stack[0x18]:8  param_9                                 XREF[13959]: 001011cf(R), 
+                                                                                                   001011f9(R), 
+                                                                                                   0010121d(R), 
+                                                                                                   00101249(R), 
+                                                                                                   0010126a(R), 
+                                                                                                   00101294(R), 
+                                                                                                   001012b8(R), 
+                                                                                                   001012e4(R), 
+                                                                                                   00101308(R), 
+                                                                                                   00101334(R), 
+                                                                                                   00101358(R), 
+                                                                                                   00101384(R), 
+                                                                                                   001013a8(R), 
+                                                                                                   001013d4(R), 
+                                                                                                   001013f8(R), 
+                                                                                                   00101424(R), 
+                                                                                                   00101448(R), 
+                                                                                                   00101474(R), 
+                                                                                                   00101498(R), 
+                                                                                                   001014c4(R)  
+             undefined4        Stack[-0xc]:4  local_c                                 XREF[10970]: 001011b5(W), 
+                                                                                                   001011f2(R), 
+                                                                                                   00101242(R), 
+                                                                                                   0010128d(R), 
+                                                                                                   001012dd(R), 
+                                                                                                   0010132d(R), 
+                                                                                                   0010137d(R), 
+                                                                                                   001013cd(R), 
+                                                                                                   0010141d(R), 
+                                                                                                   0010146d(R), 
+                                                                                                   001014bd(R), 
+                                                                                                   0010150a(R), 
+                                                                                                   0010155a(R), 
+                                                                                                   001015aa(R), 
+                                                                                                   001015fa(R), 
+                                                                                                   0010164a(R), 
+                                                                                                   0010169a(R), 
+                                                                                                   001016e7(R), 
+                                                                                                   00101737(R), 
+                                                                                                   00101784(R)  
+             undefined4        Stack[-0x10]:4 local_10                                XREF[10956]: 001011b8(W), 
+                                                                                                   001011ef(R), 
+                                                                                                   0010123f(R), 
+                                                                                                   0010128a(R), 
+                                                                                                   001012da(R), 
+                                                                                                   0010132a(R), 
+                                                                                                   0010137a(R), 
+                                                                                                   001013ca(R), 
+                                                                                                   0010141a(R), 
+                                                                                                   0010146a(R), 
+                                                                                                   001014ba(R), 
+                                                                                                   00101507(R), 
+                                                                                                   00101557(R), 
+                                                                                                   001015a7(R), 
+                                                                                                   001015f7(R), 
+                                                                                                   00101647(R), 
+                                                                                                   00101697(R), 
+                                                                                                   001016e4(R), 
+                                                                                                   00101734(R), 
+                                                                                                   00101781(R)  
+             undefined4        Stack[-0x14]:4 local_14                                XREF[11056]: 001011bb(W), 
+                                                                                                   001011ec(R), 
+                                                                                                   0010123c(R), 
+                                                                                                   00101287(R), 
+                                                                                                   001012d7(R), 
+                                                                                                   00101327(R), 
+                                                                                                   00101377(R), 
+                                                                                                   001013c7(R), 
+                                                                                                   00101417(R), 
+                                                                                                   00101467(R), 
+                                                                                                   001014b7(R), 
+                                                                                                   00101504(R), 
+                                                                                                   00101554(R), 
+                                                                                                   001015a4(R), 
+                                                                                                   001015f4(R), 
+                                                                                                   00101644(R), 
+                                                                                                   00101694(R), 
+                                                                                                   001016e1(R), 
+                                                                                                   00101731(R), 
+                                                                                                   0010177e(R)  
+             undefined4        Stack[-0x18]:4 local_18                                XREF[11763]: 001011be(W), 
+                                                                                                   001011e9(R), 
+                                                                                                   00101239(R), 
+                                                                                                   00101284(R), 
+                                                                                                   001012d4(R), 
+                                                                                                   00101324(R), 
+                                                                                                   00101374(R), 
+                                                                                                   001013c4(R), 
+                                                                                                   00101414(R), 
+                                                                                                   00101464(R), 
+                                                                                                   001014b4(R), 
+                                                                                                   00101501(R), 
+                                                                                                   00101551(R), 
+                                                                                                   001015a1(R), 
+                                                                                                   001015f1(R), 
+                                                                                                   00101641(R), 
+                                                                                                   00101691(R), 
+                                                                                                   001016de(R), 
+                                                                                                   0010172e(R), 
+                                                                                                   0010177b(R)  
+             undefined4        Stack[-0x1c]:4 local_1c                                XREF[11901]: 001011c1(W), 
+                                                                                                   001011e5(R), 
+                                                                                                   00101235(R), 
+                                                                                                   00101280(R), 
+                                                                                                   001012d0(R), 
+                                                                                                   00101320(R), 
+                                                                                                   00101370(R), 
+                                                                                                   001013c0(R), 
+                                                                                                   00101410(R), 
+                                                                                                   00101460(R), 
+                                                                                                   001014b0(R), 
+                                                                                                   001014fd(R), 
+                                                                                                   0010154d(R), 
+                                                                                                   0010159d(R), 
+                                                                                                   001015ed(R), 
+                                                                                                   0010163d(R), 
+                                                                                                   0010168d(R), 
+                                                                                                   001016da(R), 
+                                                                                                   0010172a(R), 
+                                                                                                   00101777(R)  
+             undefined4        Stack[-0x20]:4 local_20                                XREF[11817]: 001011c5(W), 
+                                                                                                   001011e1(R), 
+                                                                                                   00101231(R), 
+                                                                                                   0010127c(R), 
+                                                                                                   001012cc(R), 
+                                                                                                   0010131c(R), 
+                                                                                                   0010136c(R), 
+                                                                                                   001013bc(R), 
+                                                                                                   0010140c(R), 
+                                                                                                   0010145c(R), 
+                                                                                                   001014ac(R), 
+                                                                                                   001014f9(R), 
+                                                                                                   00101549(R), 
+                                                                                                   00101599(R), 
+                                                                                                   001015e9(R), 
+                                                                                                   00101639(R), 
+                                                                                                   00101689(R), 
+                                                                                                   001016d6(R), 
+                                                                                                   00101726(R), 
+                                                                                                   00101773(R)  
+                             z                                               XREF[11059]  Entry Point(*), 00101206(c), 
+                                                                                          00101256(c), 001012a1(c), 
+                                                                                          001012f1(c), 00101341(c), 
+                                                                                          00101391(c), 001013e1(c), 
+                                                                                          00101431(c), 00101481(c), 
+                                                                                          001014d1(c), 0010151e(c), 
+                                                                                          0010156e(c), 001015be(c), 
+                                                                                          0010160e(c), 0010165e(c), 
+                                                                                          001016ae(c), 001016fb(c), 
+                                                                                          0010174b(c), 001c3030, [more]
+        001011a9 f3 0f 1e fa     ENDBR64
+        001011ad 55              PUSH       RBP
+        001011ae 48 89 e5        MOV        RBP,RSP
+        001011b1 48 83 ec 20     SUB        RSP,0x20
+        001011b5 89 7d fc        MOV        dword ptr [RBP + local_c],param_1
+        001011b8 89 75 f8        MOV        dword ptr [RBP + local_10],param_2
+        001011bb 89 55 f4        MOV        dword ptr [RBP + local_14],param_3
+        001011be 89 4d f0        MOV        dword ptr [RBP + local_18],param_4
+        001011c1 44 89 45 ec     MOV        dword ptr [RBP + local_1c],param_5
+        001011c5 44 89 4d e8     MOV        dword ptr [RBP + local_20],param_6
+        001011c9 83 7d 10 02     CMP        dword ptr [RBP + param_7],0x2
+        001011cd 75 45           JNZ        LAB_00101214
+        001011cf 48 8b 45 20     MOV        RAX,qword ptr [RBP + param_9]
+        001011d3 48 83 c0 08     ADD        RAX,0x8
+        001011d7 c7 00 00        MOV        dword ptr [RAX],0x200000
+                 00 20 00
+        001011dd 83 45 10 01     ADD        dword ptr [RBP + param_7],0x1
+        001011e1 44 8b 4d e8     MOV        param_6,dword ptr [RBP + local_20]
+        001011e5 44 8b 45 ec     MOV        param_5,dword ptr [RBP + local_1c]
+        001011e9 8b 4d f0        MOV        param_4,dword ptr [RBP + local_18]
+        001011ec 8b 55 f4        MOV        param_3,dword ptr [RBP + local_14]
+        001011ef 8b 75 f8        MOV        param_2,dword ptr [RBP + local_10]
+        001011f2 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        001011f5 48 83 ec 08     SUB        RSP,0x8
+        001011f9 ff 75 20        PUSH       qword ptr [RBP + param_9]
+        001011fc 8b 7d 18        MOV        param_1,dword ptr [RBP + param_8]
+        001011ff 57              PUSH       param_1
+        00101200 8b 7d 10        MOV        param_1,dword ptr [RBP + param_7]
+        00101203 57              PUSH       param_1
+        00101204 89 c7           MOV        param_1,EAX
+        00101206 e8 9e ff        CALL       z                                                undefined z(undefined param_1, u
+                 ff ff
+        0010120b 48 83 c4 20     ADD        RSP,0x20
+        0010120f e9 52 19        JMP        LAB_001c2b66
+                 0c 00
+                             LAB_00101214                                    XREF[1]:     001011cd(j)  
+        00101214 81 7d 10        CMP        dword ptr [RBP + param_7],0x1a8
+                 a8 01 00 00
+        0010121b 75 47           JNZ        LAB_00101264
+        0010121d 48 8b 45 20     MOV        RAX,qword ptr [RBP + param_9]
+        00101221 48 05 c0        ADD        RAX,0x6c0
+                 06 00 00
+        00101227 c7 00 73        MOV        dword ptr [RAX],0x73
+                 00 00 00
+        0010122d 83 45 10 01     ADD        dword ptr [RBP + param_7],0x1
+        00101231 44 8b 4d e8     MOV        param_6,dword ptr [RBP + local_20]
+        00101235 44 8b 45 ec     MOV        param_5,dword ptr [RBP + local_1c]
+        00101239 8b 4d f0        MOV        param_4,dword ptr [RBP + local_18]
+        0010123c 8b 55 f4        MOV        param_3,dword ptr [RBP + local_14]
+        0010123f 8b 75 f8        MOV        param_2,dword ptr [RBP + local_10]
+        00101242 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        00101245 48 83 ec 08     SUB        RSP,0x8
+        00101249 ff 75 20        PUSH       qword ptr [RBP + param_9]
+        0010124c 8b 7d 18        MOV        param_1,dword ptr [RBP + param_8]
+        0010124f 57              PUSH       param_1
+        00101250 8b 7d 10        MOV        param_1,dword ptr [RBP + param_7]
+        00101253 57              PUSH       param_1
+        00101254 89 c7           MOV        param_1,EAX
+        00101256 e8 4e ff        CALL       z                                                undefined z(undefined param_1, u
+                 ff ff
+        0010125b 48 83 c4 20     ADD        RSP,0x20
+        0010125f e9 02 19        JMP        LAB_001c2b66
+                 0c 00
+                             LAB_00101264                                    XREF[1]:     0010121b(j)  
+        00101264 83 7d 10 0e     CMP        dword ptr [RBP + param_7],0xe
+        00101268 75 45           JNZ        LAB_001012af
+        0010126a 48 8b 45 20     MOV        RAX,qword ptr [RBP + param_9]
+        0010126e 48 83 c0 38     ADD        RAX,0x38
+        00101272 c7 00 00        MOV        dword ptr [RAX],0x200
+                 02 00 00
+        00101278 83 45 10 01     ADD        dword ptr [RBP + param_7],0x1
+        0010127c 44 8b 4d e8     MOV        param_6,dword ptr [RBP + local_20]
+        00101280 44 8b 45 ec     MOV        param_5,dword ptr [RBP + local_1c]
+        00101284 8b 4d f0        MOV        param_4,dword ptr [RBP + local_18]
+        00101287 8b 55 f4        MOV        param_3,dword ptr [RBP + local_14]
+        0010128a 8b 75 f8        MOV        param_2,dword ptr [RBP + local_10]
+        0010128d 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        00101290 48 83 ec 08     SUB        RSP,0x8
+        00101294 ff 75 20        PUSH       qword ptr [RBP + param_9]
+        00101297 8b 7d 18        MOV        param_1,dword ptr [RBP + param_8]
+        0010129a 57              PUSH       param_1
+        0010129b 8b 7d 10        MOV        param_1,dword ptr [RBP + param_7]
+        0010129e 57              PUSH       param_1
+        0010129f 89 c7           MOV        param_1,EAX
+        001012a1 e8 03 ff        CALL       z                                                undefined z(undefined param_1, u
+                 ff ff
+        001012a6 48 83 c4 20     ADD        RSP,0x20
+        001012aa e9 b7 18        JMP        LAB_001c2b66
+                 0c 00
+                             LAB_001012af                                    XREF[1]:     00101268(j)  
+        001012af 81 7d 10        CMP        dword ptr [RBP + param_7],0x161
+                 61 01 00 00
+        001012b6 75 47           JNZ        LAB_001012ff
+        001012b8 48 8b 45 20     MOV        RAX,qword ptr [RBP + param_9]
+        001012bc 48 05 98        ADD        RAX,0x598
+                 05 00 00
+        001012c2 c7 00 74        MOV        dword ptr [RAX],0x74
+                 00 00 00
+        001012c8 83 45 10 01     ADD        dword ptr [RBP + param_7],0x1
+        001012cc 44 8b 4d e8     MOV        param_6,dword ptr [RBP + local_20]
+        001012d0 44 8b 45 ec     MOV        param_5,dword ptr [RBP + local_1c]
+        001012d4 8b 4d f0        MOV        param_4,dword ptr [RBP + local_18]
+        001012d7 8b 55 f4        MOV        param_3,dword ptr [RBP + local_14]
+        001012da 8b 75 f8        MOV        param_2,dword ptr [RBP + local_10]
+        001012dd 8b 45 fc        MOV        EAX,dword ptr [RBP + local_c]
+        001012e0 48 83 ec 08     SUB        RSP,0x8
+        001012e4 ff 75 20        PUSH       qword ptr [RBP + param_9]
+        001012e7 8b 7d 18        MOV        param_1,dword ptr [RBP + param_8]
+        001012ea 57              PUSH       param_1
+        001012eb 8b 7d 10        MOV        param_1,dword ptr [RBP + param_7]
+        001012ee 57              PUSH       param_1
+        001012ef 89 c7           MOV        param_1,EAX
+        001012f1 e8 b3 fe        CALL       z                                                undefined z(undefined param_1, u
+                 ff ff
+        001012f6 48 83 c4 20     ADD        RSP,0x20
+        001012fa e9 67 18        JMP        LAB_001c2b66
+                 0c 00
+
