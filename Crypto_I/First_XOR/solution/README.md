@@ -2,4 +2,4 @@
 
 ```python3 findflaginprintedresults.py```
 
-2. I know the output of this script looks ugly, but among these strange looking lines the real flag can be found.
+2. I used bruteforce to get the flag. I know the output of this script looks ugly, but among these strange looking lines the real flag can be found.

@@ -2,3 +2,4 @@
 
 ```python3 sol.py```
 
+2. The code explains itself well. Looking at ```chal.py``` should give the correct way of solving this. 

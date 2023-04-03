@@ -12,7 +12,7 @@ def vigenereDecrypt(ciphertext, key):
     plaintext += chr((ord(ciphertext[i]) - ord(key[i % len(key)])) % 26 + ord("a"))
   return plaintext
 
-with open("ciphertext", "r") as c, open("key", "r") as k:
+with open("../files/ciphertext", "r") as c, open("../files/key", "r") as k:
   ciphertext = c.read()
   key = k.read()
 
