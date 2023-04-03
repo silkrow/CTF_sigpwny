@@ -3,7 +3,7 @@ import random
 
 def main():
 
-	with open("message.txt", "r") as m:
+	with open("../files/message.txt", "r") as m:
 		ciphertext = m.read()
 		a = []
 		for i in range(int(len(ciphertext)/2)):
