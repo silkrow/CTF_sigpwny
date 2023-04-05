@@ -1,7 +1,7 @@
 def sxor(s1, s2):
 	return ''.join(chr(ord(a) ^ ord(b)) for a,b in zip(s1,s2))
 
-with open("message.txt", "r") as f:
+with open("../files/message.txt", "r") as f:
 	messages = f.read()
 
 messages = messages.replace("'", " ")
@@ -16,27 +16,27 @@ for i in range(len(messages)):
 	ascii_str = "".join([chr(int(hex_str[i:i+2], 16)) for i in range(0, len(hex_str), 2)])
 	messages[i] = ascii_str
 
-guess = ", "
-
-min = 1024
-for i in range(len(messages)):
-	if len(messages[i]) < min:
-		min = len(messages[i])
+characters = [i for i in range(ord('!'), ord('~')+1)]
+characters.append(ord(' '))
+guess = "sigpwny{"
 
 for i in range(len(messages)):
 	print("----------------------------------------------")
 	print("cipher string #" + str(i))
-	for j in range(min - len(guess) + 1):
+	for j in range(1024 - len(guess) + 1):
 		pool = []
 		flag = True
 		for k in range(len(messages)):
-			test = sxor(messages[k][j*2:], guess)
-			pool.append(test)
+			if j >= min(len(messages[k]), len(messages[i])) - len(guess) + 1:
+				continue
+			test = sxor(sxor(messages[k][j:], messages[i][j:]), guess)
+			assert len(test) == len(guess), "Unmatching length!"
+			pool.append((test, k))
 			for l in range(len(test)):
-				if (ord(test[l]) < ord('!') or ord(test[l]) > ord('~')):
+				if ord(test[l]) not in characters:
 					flag = False
 					break
-		if flag:
+		if flag and len(pool) != 0:
 			print("get at position " + str(j))
 			for l in range(len(pool)):
-					print(pool[l])
+				print(pool[l])
