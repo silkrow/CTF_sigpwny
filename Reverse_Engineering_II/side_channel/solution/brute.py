@@ -1,10 +1,12 @@
 import gdb
 
 char_range = ord('~') - ord('!') + 1
-# information obtained with Ghidra
-for_success = 0x00405465
-for_update = 0x00405468
-fail = 0x0040544f
+
+obj_z_start = 0x001011a9     
+offset = 0x555555454000  
+
+z_start = obj_z_start + offset
+
 flag_len = 31 
 # global variables
 known_flag = ''

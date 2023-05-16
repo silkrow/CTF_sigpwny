@@ -1,0 +1,5 @@
+offset	0x555555454000
+main	function: 0x555555616b69	0x001c2b69
+z		function: 0x5555555551a9	0x001011a9
+z		return:	0x555555616b67		0x001c2b67
+51 characters are printed before user can input.
