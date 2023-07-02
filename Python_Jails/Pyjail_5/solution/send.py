@@ -14,7 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	print("Feedback from server: ", feedback)
 
 	# Run your Python code and save the output to a variable
-	payload = b"global is_bad; is_bad = False; main()"
+	payload = b"main()"
 
 	# Send the output to the server
 	s.sendall(payload)
